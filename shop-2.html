@@ -1,0 +1,1678 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>shop</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- font-awesome 4.7.0 CSS -->
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+               integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+               crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Bootstrap Icons -->
+           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"crossorigin="anonymous"/>
+            <link rel="stylesheet" href="style.css">
+
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cookie&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lato&family=Montserrat:ital,wght@0,200..900;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital@0;1&family=Roboto:wght@400;700&family=Varela+Round&display=swap');:root{
+            --font-family-Montserrat: "Montserrat", serif;
+            --font-family-cookie: "Cookie", serif;
+            --font-family-Poppins: "Poppins", serif;
+            --text-color-white: #fff;
+            --text-color-black:#333333;
+            --bg-color: #f8e6c2;
+            --footer-bg-color: #212529;
+    
+        }
+        .container {
+            max-width: 1600px !important;
+        }
+
+        .navbar{
+            background-color:#F8F9FA ;
+        }
+
+                
+        .header{
+            max-width: 1600px !important;
+            color: #fff;
+        }
+
+
+        .header ul li{
+            color:  #333333;
+            font-size: 20px;
+            font-family: var(--font-family-Poppins);
+            font-weight: 500;
+            margin-right: 15px;
+        }
+        .header ul li:last-child{
+            margin-right: 0;
+        }
+        .header ul li a{
+            padding: 5px 10px !important;
+            font-weight: 500;
+        }
+        .header ul li a:hover{
+            /* background-color: #FCACB4; */
+            color: #854a1a;
+            transition: 0.5sec !important;
+        }
+
+        .form-control:focus{
+                box-shadow: none !important;
+            }
+
+        /* .cosmetic {
+            background-color: #FCACBA;
+        }
+
+        .cosmetic>div>div>div:nth-child(2){
+         float: end;
+        }
+
+        .cosmetic h3{
+            font-family: var(--font-family-Montserrat);
+            font-weight: bold;
+        }
+
+        .cosmetic button{
+            font-family: var(--font-family-Poppins);
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 0.5rem;
+            background-color: #ff2b74;
+            color:#fff;
+            border: none;
+            text-transform: uppercase;
+        }
+
+        .cosmetic button:hover {
+            background-color: #F8F9FA!important;
+            color: #141319;
+        } */
+
+        /* .shop{
+                margin-top: 70px !important;
+            } */
+
+        .card img {
+            width: 100%;
+            height: 350px;
+        
+        }
+
+        /* .card p{
+            width: 100px;
+            white-space: nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
+        } */
+
+        #searchBar {
+            display: none;
+        }
+
+        .custom-width {
+            width: 100%;
+        }
+
+        .accordion-button:focus {
+            z-index: 3;
+            border-color: #333 !important;
+            outline: 0;
+            box-shadow: #333 !important;
+        }
+
+        .accordion-item button {
+            font-weight: bold;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #854a1a !important;
+            color: #fff;
+        }
+
+        .page-link  {
+            box-shadow: none !important;
+        }
+
+        .card-header{
+            font-weight: bold !important;
+            text-transform: uppercase;
+        }
+
+        /* .card ul li{
+           list-style-type: style type;
+        } */
+
+        .mega-dropdown {
+            position: static;
+        }
+
+        .mega-menu {
+            width: 100%;
+            left: 0;
+            padding: 20px;
+        }
+
+        .explore p {
+            font-size: 16px;
+        }
+
+        .footer{
+            background:#212529 !important;
+            color: #fff;
+        }
+        .footer address,p{
+            margin-bottom: px;
+            text-transform: capitalize;
+            text-align: left;
+            font-size: 20px;
+        }
+        .footer li {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        .footer a{
+            text-decoration: none;
+            font-family: var(--font-family-Poppins);
+            font-size: 20px;
+            color: #fff;
+        }
+        .footer a:hover{
+            color: #854a1a;
+            text-decoration: none;
+        }
+
+        .letter{
+            background-color: #854a1a !important;
+            border-radius: 0.2rem;
+            border: none;
+            color: #fff;
+        }
+
+        .letter:hover {
+            background-color: #f1f1f1 !important;
+            color: #854a1a;
+        }
+
+        .page-link span{
+            color: #0d6efd !important;
+        }
+
+        .active>.page-link{
+            background-color: #854a1a !important;
+            box-shadow: none !important;
+           
+        }
+        .shop span {
+           color:#854a1a;
+        }
+        .accordion-button:focus{
+            box-shadow: none !important;
+        }
+
+        .shop>div:nth-child(1)>div ul li button{
+            color: #333;
+        }
+        .shop>div:nth-child(1)>div ul li button:hover,
+        .shop>div:nth-child(1)>div ul li button.active{
+        background-color: #854a1a!important;
+        color: #fff;
+        }
+
+        /* .shop small a{
+            color: #333;  
+        } */
+
+        .modal .btn {
+            border: none !important;
+            box-shadow: none !important;
+        }
+        .btn1,
+        .btn2 {
+            background: #854a1a;
+            color: #fff;
+            outline: none;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 0.3rem;
+            font-size: 16px;
+        }
+        .btn1:hover,
+        .btn2:hover{
+            background: #333333;
+        }
+        .req{
+            color: #854a1a;
+        }
+
+
+        @media (max-width:600px) {
+            .custom-width {
+                width: auto;
+                display: none;
+            }
+
+            .address {
+                border: none !important;
+            }
+
+            .shop h5{
+                font-size: 18px;
+            }
+
+            .card p{
+                width: 100px;
+                white-space: nowrap;
+                overflow:hidden;
+                text-overflow: ellipsis; 
+            }
+
+            .modal-content {
+                position: relative !important;
+            }
+
+            .modal-content>button:nth-child(1) {
+                position: absolute !important;
+                right: -8px !important;
+                z-index: 99 !important;
+            }
+
+            .modal-content>button:nth-child(1) svg {
+                fill: #000 !important;
+            }
+
+            .explore h3{
+                font-size: 20px;
+            }
+
+            .explore h5{
+                font-size: 18px;
+            }
+
+            .footer h3{
+                font-size: 20px;
+            }
+
+            .footer h3{
+                font-size: 20px;
+            }
+
+            .footer ul li a{
+                font-size: 16px !important;
+            }
+
+            .footer p {
+                font-size: 18px;
+                margin-bottom: 10px;
+                align-items: center;
+            }
+
+            .footer>div>div>div:nth-child(2) h3 {
+                margin-top: 10px;
+            }
+
+            .footer>div>div {
+                padding : 30px 0px !important;
+            }
+
+           
+        }
+
+        @media (min-width:720px) and (max-width:960px) {
+
+            .shop h5{
+                font-size: 25px;
+            }
+           .card img{
+            width: 280px !important;
+           }
+
+           .explore p{
+            font-size: 18px;
+           }
+
+           .explore h3{
+            font-size: 30px;
+           }
+
+           .explore h5{
+            font-size: 25px;
+           }
+
+           .footer>div>div {
+                padding : 30px 0px !important;
+            }
+
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav
+            class="navbar navbar-expand-sm p-0 fixed-top shadow-sm" style="background-color: #F8F9FA ;"
+        >
+            <div class="container header my-2">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo1.png" alt="" width="150px" height="auto">
+                </a>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                > 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <div class="d-flex custom-width justify-content-center ms-3 ">
+                        <div class="d-none d-lg-block w-100">
+                            <form class="input-group border-0 py-1 rounded-pill" style="border: 1px solid #333 !important;" >
+                                <button class="btn border-0 my-2 my-sm-0" type="submit">
+                                    <i class="fa fa-search text-dark" aria-hidden="true"></i>
+                                </button>
+                                <input type="text" class="form-control border-0 me-sm-2 bg-transparent"  placeholder="Search" />
+                                
+                            </form>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <!-- <a class="nav-link active" href="#" aria-current="page"
+                                >HOME
+                                <span class="visually-hidden">(current)</span></a
+                            > -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="shop.html">MAKEUP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-index.html">SKINCARE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact us.html">CONTACT</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li> -->
+                
+                    </ul>
+                </div>
+                <div>
+                    <div class="nav-btns width-100% height-auto mx-3">
+                        <!--cart-->
+                        <a href="cart.html" class="btn btn-outline-dark">
+                            <i class="bi bi-cart"></i>
+                        </a>
+                    </div>
+                    <!-- <div class="dropdown">
+                        <a href="#" class="btn btn-outline-dark  ">   
+                            <i class="bi bi-person-circle my-sm-0 "></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">Login</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="dropdown ">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><i class="bi bi-person-circle"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-black text-center bg-transparent" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Hidden Search Bar
+        <div class="container-fluid bg-light shadow-sm p-3" id="searchBar">
+            <div class="d-flex justify-content-center">
+                <input class="form-control me-sm-2" type="text" placeholder="Search" />
+                <button class="btn btn-danger" id="closeSearch">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+        </div> -->
+    </header>
+   
+    <!-- <div class="contianer-fluid cosmetic">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 ">
+                    <img src="images/expired-beauty-products-1-d7ab076eb6e54b13982e5c6b39c93e2e.png" alt="" class="img-fluid ">
+                </div>
+                <div class="col-lg-6  pt-4 ">
+                    <h3 class="display-2 pt-5">Cosmetic products that everyone loves. </h3>
+                    <p>A solid skincare routine is key to maintaining skin health. It helps keep your skin clean, exfoliates dead cells, and nourishes it with essential nutrients.</p>
+                    <a href=""><button>shop now</button></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container-fluid shop  g-0 pt-5 mt-5">
+        <div class="container g-0">
+            <div class="row d-lg-none bg-white border text-center py-2 g-0">
+                <div class="col">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom"><svg width="20" height="20" viewBox="0 0 256 256">
+                            <path fill="none" d="M0 0h256v256H0z"></path>
+                            <path fill="none" stroke="#111112" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="12" d="m144 168 40 40 40-40M184 112v96M48 128h72M48 64h136M48 192h56">
+                            </path>
+                        </svg> Sort</button>
+                </div>
+                <div class="col border-start">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                        aria-controls="staticBackdrop"><svg width="20" height="20" viewBox="0 0 256 256">
+                            <path fill="none" d="M0 0h256v256H0z"></path>
+                            <path fill="none" stroke="#111112" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="12" d="M148 172H40M216 172h-28"></path>
+                            <circle cx="168" cy="172" r="20" fill="none" stroke="#111112" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="12"></circle>
+                            <path fill="none" stroke="#111112" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="12" d="M84 84H40M216 84h-92"></path>
+                            <circle cx="104" cy="84" r="20" fill="none" stroke="#111112" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="12"></circle>
+                        </svg> Filter</button>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-2 d-none d-lg-block">
+                    <div class="row ">
+                        <div class="col mt-4">
+                            <div class="card">
+                                <img src="images/cs.png" class="card-img-top object-fit-contain" alt="..."
+                                    style="height: auto !important;">
+                                <div class="card-body">
+                                    <h5 class="card-title"><small>skin care products with benefits...</small></h5>
+                                    <p class="card-text"><small>Under ₹599 + Extra 15% Off</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">Filters</div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">CATEGORIES</li>
+                                    <a href="shop.html" class="text-decoration-none"><li class="list-group-item">Makeup</li></a>
+                                    <a href="product-index.html" class="text-decoration-none"><li class="list-group-item">Body & Face Skin Care</li></a>
+                                    <li class="list-group-item">Bath & shower</li>
+                                    <li class="list-group-item">Hair care</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                            aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                            BRAND
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    MAYBELLIEN NEW YORK
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    LAKME
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    MARS
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    FACES CANADA
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    SWISS BEAUTY
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    MAMAEARTH
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            GENDER
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Men
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Women
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Couple
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            DISCOUNT </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    70% or more
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    60% or more
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    50% or more
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    40% or more
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    30% or more
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    70% or more
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                           BENEFITS </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                   Cleansing
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Quick Dry
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                   Waterproof
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                  Light Weight
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                   Plumping
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Long-Wearing
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                            OFFERS </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Buy more save more
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Special price
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    No Cost EMI
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                            FUNCTION </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                   Blush
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Cleansing
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                  Colour
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                  concealer
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                                                FORMULATION </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Balm
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Cream
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                     Gel
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Liquid
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                     Lotion
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                                                PRODUCT TYPE </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Lipstic
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Makeup
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                       palette
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                      Skincare
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                                                SKIN TYPE </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                       Combination
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Dry
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                       Normal
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                      Oily
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                      Sensitive
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                      Skin type
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                                                FINISH </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                       Cream
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Dramatic
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                      Glitter
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-10">
+                    <div class="bg-white">
+                        <div class="row">
+                            <div class="col d-none d-lg-block mt-4">
+                                <p class="text-body-secondary lh-sm">
+                                    <small>
+                                        <nav style="--bs-breadcrumb-divider : url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                                            aria-label="breadcrumb">
+                                            <ol class="breadcrumb ">
+                                                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                                <li class="breadcrumb-item"><a href="product-index.html">skin care</a>
+                                                <li class="breadcrumb-item"><a href="#">Makeup</a>
+                                            </ol>
+                                        </nav>
+                                    </small>
+                                </p>
+                                <p class="text-body-secondary lh-sm">
+                                    <small class="fs-6">Makeup isn't about using a lot of products to alter the way you look but enhancing your features to make them more attractive. Whether a glamorous night out or a subtle dress-up for work, it is possible to create countless looks with the correct application. In reality, even the natural flushed look we see on screen artists, is a combination of techniques and cosmetic products. Whether you want intense eyes, defined lips, or a contoured face, you can find a makeup product for everything.</small>
+                                        <p>20 Products</p>
+                                </p>
+                                <ul class="nav nav-pills mb-3"  id="pills-tab" role="tablist">
+                                    <li class="nav-item " role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">Popularity</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link"  id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false">Price -- Low to
+                                            High</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">Price -- High to
+                                            Low</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-newest-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-disabled" type="button" role="tab"
+                                            aria-controls="pills-Newest" aria-selected="false">Newest First</button>
+                                    </li>
+                                </ul>
+                                <!-- <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab" tabindex="0">...</div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab" tabindex="0">...
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab" tabindex="0">...
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-newest" role="tabpanel"
+                                        aria-labelledby="pills-newest-tab" tabindex="0">...
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-0 g-md-3 shop ">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <a href="cart.html"><img src="images/100-bulgarian-valley-rose-water-hyaluronic-acid-hydrating-toner-original-imah8qxz2zqvr2tm.png" class="card-img-top object-fit-cover" alt="..."></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Rose Water</h5>
+                                    <p class="card-text">Hyaluronic Acid Hydrating Toner</p>
+                                    <h5>&#8377;500</h5> 
+                                    <span class="fa fa-star checked "></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span><span> 5.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/-original-imahah7qzhr7tcm3.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Body Lotion</h5>
+                                    <p class="card-text">Almond Drops</p>
+                                    <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star text-dark"></span><span> 3.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/cream.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lip Glowy Balm</h5>
+                                    <p class="card-text">Soft Pinched Lip Oily</p>
+                                        <h5>&#8377;600</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star text-dark"></span><span> 3.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/makeup-3.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rare Beauty</h5>
+                                    <p class="card-text">Soft-Pinch Liquid Blush</p>
+                                        <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star text-dark"></span><span> 4.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/blusher.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kylie Cosmetic</h5>
+                                    <p class="card-text">Pressed Blush Powder</p>
+                                        <h5>&#8377;750</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star"></span><span> 5.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/lip-2.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kylie Cosmetic</h5>
+                                    <p class="card-text">Velvet Lip Kit.3ml + 1.1g</p>
+                                        <h5>&#8377;550</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star text-dark"></span><span> 4.5/5</span>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/BGrGQObvD5-1_Product_729238160439-Shiseido-White-Lucent-Illuminating-Micro-Spot-Serum-30ml_b84cded83a609aa084ccd82b54dbdc5ab4c94c16_1578472373.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shiseido Serum</h5>
+                                    <p class="card-text">Illuminating Micro-Spot Serum</p>
+                                       <h5>&#8377;950</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked text-dark "></span>
+                                        <span class="fa fa-star text-dark"></span><span> 3.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/lip.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sephora Collection</h5>
+                                    <p class="card-text">Soft Matte Liquid Lipstic</p>
+                                       <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star text-dark"></span><span> 4.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/BLY48qiZgt-000000000494277449_1.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lip Glow Oil</h5>
+                                    <p class="card-text">Dazzlessshadow Liqud</p>
+                                       <h5>&#8377;450</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star"></span><span> 5.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/perfume.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dior Perfume</h5>
+                                    <p class="card-text">Citrus Vanilla Fragrance</p>
+                                       <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked text-dark"></span>
+                                        <span class="fa fa-star text-dark"></span><span> 3.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/teen (1).png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dot & Key Sunscreen</h5>
+                                    <p class="card-text">Toned & Glowing Skin (30 g)</p>
+                                       <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star text-dark"></span><span> 4.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/chaar.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dot & Key Cica + Niacinamide</h5>
+                                    <p class="card-text">Acne Fades Dark Spots(50 g)</p>
+                                       <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star"></span><span> 5.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/koY4PHlUbK-000000000493640668_1.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Foundation</h5>
+                                    <p class="card-text">Born This Way Foundation</p>
+                                       <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star"></span><span> 5.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/KzxiiNGyFC-1_Product_773602642199-TATCHA-Fix-Stay-Over-100ml_467789b550277d66bb1900e96d39413b0953a58a_1659458176.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mac Fix</h5>
+                                    <p class="card-text">Over Alcohol Free Setting Spray</p>
+                                       <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star text-dark"></span><span> 4.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/-original-imagzjfggq4nnahg.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sirona Blackhead Remover</h5>
+                                    <p class="card-text">Bamboo charcoal nose strips </p>
+                                       <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star"></span><span> 5.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/beauty.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">HUDA Beauty</h5>
+                                    <p class="card-text">Liquid Foundation</p>
+                                       <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star text-dark"></span><span> 4.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/advance-vitamin-c-face-serum-for-dark-spots-pigmentation-glow-2-original-imah7x7wtmugrsgm.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proskire Pigmentation & Glow</h5>
+                                    <p class="card-text">(2 Items in the set)</p>
+                                       <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star"></span><span> 3.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/u49j-R-IOi-23305_EsteeLauder_Web_2fe6a4cf3709b644bd19aba09323a71d8c3c73ae_1523777803.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Esste Lauder</h5>
+                                    <p class="card-text">Multi-Action Toning Lotion</p>
+                                       <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star"></span><span> 5.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/300-summer-breeze-perfume-body-lotion-deeply-moisturizes-aqua-original-imah78zhwrzvehuc.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">mCaffeine Breeze Perfume</h5>
+                                    <p class="card-text"> Deeply Moisturizes(300 ml)</p>
+                                       <h5>&#8377;850</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star"></span><span> 4.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/2.png" class="card-img-top object-fit-cover" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">UNDERATED Salicylic </h5>
+                                    <p class="card-text">Betaine 3% Serum (30 ml)</p>
+                                       <h5>&#8377;950</h5> 
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star checked "></span>
+                                        <span class="fa fa-star"></span><span> 5.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-3 bg-white">
+                        <div class="col">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination pagination-lg justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="shop.html">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Off-Canvas Sort-->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">SORT BY</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small p-0">
+            <ul class="list-group">
+                <li class="list-group-item  border-0 d-flex justify-content-between align-items-center">
+                    Popularity
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item  border-0 d-flex justify-content-between align-items-center">
+                    Price -- Low to High
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item  border-0 d-flex justify-content-between align-items-center">
+                    Price -- High to Low
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item  border-0 d-flex justify-content-between align-items-center">
+                    Newest First
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Off-Canvas Filter-->
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">Price</button>
+                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">Brand</button>
+                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">Gender</button>
+                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                        aria-selected="false">Discount</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Rs. 199 and below
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Rs. 200 - Rs. 299
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Rs. 300 - Rs. 499
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Rs. 500 - Rs. 699
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Rs. 700 - Rs. 999
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Rs. 1000 and above
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid explore py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Explore Body Care Products and Face Care Products Online</h3>
+                    <p >No one likes to have dry and chapped skin. But, the changing weather, the moisture content in the air, and other environmental factors result in your skin becoming dry. The best way to maintain soft and supple skin is by incorporating body care products and face care products in your daily skincare routine. Even the soaps and body wash products that you use may contain harsh chemicals, which will cause your skin to dry out. If left untreated, you will experience scaling, itching, and cracking of the skin. The skin is the largest organ of our body and it is exposed to various chemicals, UV rays, weather changes, and more. Hence, it becomes important that we take care of it in the best possible way. Let us now take a look at some of the ways in which we can take care of our skin</p>
+                    <h5>Easy and Effective Ways to Combat Dry Skin</h5>
+                    <p>The first and the most important step to achieve healthy and smooth skin is by hydrating it. You need to drink about 1 - 2 liters of water every day and also consume lots of fruits and vegetables. The next step is by investing in quality body care products and face care products. As your skin is exposed to dust and pollution when you step outdoors, you need to buy good-quality cleansers, exfoliators, and face washes to keep your facial skin dirt- and pollution-free. Check out products that are offered by popular brands, like Nivea, Himalaya, Clean & Clear, Muuchstac, Fair & Lovely, Beardo, and more. Exfoliators help get rid of dead cells, resulting in smoother, brighter, and more refined skin. Use toners to remove any dirt or oil residues that might have been left behind after washing your face. The next step to maintain the softness and suppleness of the skin is by using moisturizers. These skin creams are formulated using various ingredients that help deeply nourish and revitalize your skin. Check out products that are offered by reputed brands, such as Vaseline, Garnier, Nivea, Biotique, Ponds, Lakme, Olay, and more. Also, you need to replace any harsh soaps with gentle body soaps or organic soaps. Check out some of the gentle and skin-friendly soap brands, like Pears, Nature's Essence, Dettol, Speaking Tree, Sebamed, Herbal Trends, and more. </p>
+                    <h5>Buy Face Care and Body Care Products Online</h5>
+                    <p>You can purchase the best face care products and body care products from your favorite online shopping site. Furthermore, if you are stepping out of your home during the day, you need to apply a sunscreen lotion or cream that comes with a high SPF level. These creams and lotions help protect your delicate skin from the harsh UVA and UVB rays of the sun. You can check out some of the best brands, like Neutrogena, Lakme, Lotus Herbals, Biotique, WOW Skin Science, Mamaearth, and more. To reduce the effect of suntan and improve the complexion of your skin, you can try using fairness creams that are offered by brands such as Ponds, Lakme, Fair & Handsome, Faiza, Vicco, and many more. Moreover, following a proper skincare regimen goes a long way in ensuring that your skin is soft, moisturized, and healthy, despite it being exposed to various harmful factors throughout the day</p>
+                    <p>under 40 products: <a href="#"> Moisturizer below 500 | Face pack below 500</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- place footer here -->
+      <footer>
+        <div class="container-fluid footer bg-dark text-light">
+            <div class="container">
+                <div class="row py-5">
+                  <div class="col-6 col-md-3 mb-3 pt-4">
+                    <img src="images/footer-logo.png" alt="" width="150px" height="auto">
+                      <p >Fashion Demo Store, Demo Store India 345-659</p>
+                      <p>Call Us: 123-456-7898</p>
+                      <p>Email Us: Support@fashion.com</p>
+                  </div>
+            
+                  <div class="col mb-3">
+                    <h3 class="pt-4">About</h3>
+                    <ul class="nav flex-column ">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Term & Policy</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">News & Blog</a></li>
+                      <li><a href="#">Careers</a></li>
+                    </ul>
+                  </div>
+            
+                  <div class="col mb-3">
+                    <h3 class="pt-4"> Catigories</h3>
+                    <ul class="nav flex-column  ">
+                      <li><a href="#">Acne Marks</a></li>
+                      <li><a href="#">Pigmentations/ Dark Spots</a></li>
+                      <li><a href="#">Acne/Pimple</a></li>
+                      <li><a href="#">Acne Scars</a></li>
+                      <li><a href="#">Open Pores</a></li>
+                    </ul>
+                  </div>
+            
+                  <div class="col-md-4 mb-3">
+                    <form>
+                      <h3 class="pt-4">Help</h3>
+                      <p>Monthly digest of what's new and exciting from us.</p>
+                      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="letter " type="button">Sumbit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+                  <p>© 2024 Company, Inc. All rights reserved.</p>
+                  <ul class="list-unstyled d-flex">
+                      <img src="images/payment-method_69e7ec.svg" alt="" class="d-block w-100 img-fluid me-5">
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- login Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content" style="position: relative;">
+        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+          style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+            fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+          </svg>
+        </button>
+        <div class="modal-body p-0">
+          <div class="container-fluid g-0">
+            <div class="row">
+              <div class="col d-flex flex-column p-5">
+                <div class="row mb-5 pb-5">
+                  <div class="col">
+                    <form class="row g-3">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Enter Email/Mobile Number</label>
+                        <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                      </div>
+                      <div class="d-grid">
+                        <button class="btn1" type="button">Request OTP</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="row align-items-end mt-5 pt-5">
+                  <div class="col text-center ">
+                    <a href="#exampleModal2" class="req" data-bs-toggle="modal">New to EVITA? Create an
+                      account</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!-- Modal2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content" style="position: relative;">
+        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+          style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+            fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+          </svg>
+        </button>
+        <div class="modal-body p-0">
+          <div class="container-fluid g-0">
+            <div class="row">
+              <div class="col d-flex flex-column p-5">
+                <div class="row mb-5 pb-5">
+                  <div class="col">
+                    <form class="row g-3">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Enter Mobile Number</label>
+                        <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                      </div>
+                      <div class="d-grid">
+                        <button class="btn2" type="button">Continue</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="row align-items-end mt-5 pt-5">
+                  <div class="col text-center ">
+                    <a href="exampleModal1" class="req" data-bs-toggle="modal">Existing User? Log in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+    <!-- Form Validation Script -->
+    <!-- <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script> -->
+    <!-- <script>
+        // Add your JavaScript code here
+        document.getElementById("searchBtn").addEventListener("click", function () {
+            document.getElementById("searchBar").style.display = "block";
+        })
+        document.getElementById("closeSearch").addEventListener("click", function () {
+            document.getElementById("searchBar").style.display = "none";
+        })
+        document.addEventListener("click", function (event) {
+            let searchBar = document.getElementById("searchBar");
+            let searchBtn = document.getElementById("searchBtn");
+            if (!searchBar.contains(event.target) && !searchBtn.contains(event.target)) {
+                searchBar.style.display = "none";
+            }
+        })
+    </script> -->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

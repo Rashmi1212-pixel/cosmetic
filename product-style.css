@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cookie&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lato&family=Montserrat:ital,wght@0,200..900;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital@0;1&family=Roboto:wght@400;700&family=Varela+Round&display=swap');:root{
+    --font-family-Montserrat: "Montserrat", serif;
+    --font-family-cookie: "Cookie", serif;
+    --font-family-Poppins: "Poppins", serif;
+    --text-color-white: #fff;
+    --text-color-black:#333333;
+    --bg-color: #FFDEDE;
+   --btn-color-pink:#ff2b74;
+    --bg-color-pink: #FCACBA;
+    --footer-bg-color: #212529;
+
+}
+
+.header{
+    max-width: 1600px !important;
+}
+
+
+/* .header ul li{
+    color: #141319;
+    font-size: 20px;
+    font-family: var(--font-family-Poppins);
+    font-weight: 500;
+}
+
+.header ul li a:hover{
+    color: #FCACBA;
+} */
+
+.header2 {
+    background-color: #FCACBA;
+}
+
+.header2 h1{
+    font-family: var(--font-family-Montserrat);
+    font-weight: bold;
+}
+
+.header2 p {
+    font-family: var(--font-family-Poppins);
+    font-weight: light;
+    font-size: 16px;
+}
+
+.header2 button{
+    font-family: var(--font-family-Poppins);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    background-color: #141319;
+    color:#fff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.header2 button:hover {
+    background-color: #F8F9FA!important;
+    color: #141319;
+}
+
+
+.gallery{
+    background-color: #FFDEDE;
+}
+.gallery h2 {
+    font-weight: bold;
+}
+.gallery-box{
+    width: 100% !important;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F9FA;
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+}
+
+.gallery-img{
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+
+.gallery-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.gallery-img span {
+    position: absolute;
+    left:10px;
+    top: 10px;
+    background-color:#ff2b74!important;
+    color: #f1f1f1 !important;
+    padding: 3px 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.gallery-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.gallery-text span{
+    color: #8b3d74;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.gallery-text a{
+    color: #1d1d1d;
+    font-weight: 600;
+    font-size: 1.rem;
+    text-decoration: none;
+}
+
+.gallery>div>div:nth-child(2){
+    row-gap: 24px !important    ;
+}
+
+.gallery button {
+    padding: 10px 45px;
+    background-color: #333333; 
+    color: #f1f1f1;
+    font-family: var(--font-family-Poppins);
+    font-weight: bold;
+    margin: 5px 0px;
+    border: none;
+}
+
+.gallery button:hover {
+    background-color: #ff2b74;
+    /* color: #141319; */
+}
+
+.gallery h5{
+    text-transform: capitalize;
+}
+
+.custome img {
+    width: 100%;
+    max-width: 372.39px !important;
+}
+
+.explore p {
+    font-size: 16px;
+}
+
+.page-navigation{
+    background-color: #edd1d4;
+}
+
+.footer{
+    background:#212529 !important;
+    color: #fff;
+}
+.footer address,p{
+    margin-bottom: px;
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 20px;
+}
+.footer li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.footer a{
+    text-decoration: none;
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    color: #fff;
+}
+.footer a:hover{
+    color: #FCACB4;
+    text-decoration: none;
+}

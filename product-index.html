@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>product</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- animation css -->
+        <link
+            rel="stylesheet"
+             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- font-awesome 4.7.0 CSS -->
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+               integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+               crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Bootstrap Icons -->
+           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"crossorigin="anonymous"/>
+            <link rel="stylesheet" href="style.css">
+       
+            <style>
+                .container-fluid{
+                    width: 100% !important;
+                }
+
+                .container{
+                    max-width: 1600px !important;
+                }
+
+                #searchBar {
+                    display: none;
+                }
+        
+                .custom-width {
+                    width: 100%;
+                }
+
+                .form {
+                    color:#FFDEDE;
+                }
+
+                input{
+                    width: 100%;
+                
+                }
+
+                .form-control:focus{
+                box-shadow: none !important;
+                }
+                
+                .navbar{
+                    background-color:#F8F9FA ;
+                }
+
+                        
+                .header{
+                    max-width: 1600px !important;
+                    color: #fff;
+                }
+
+
+                .header ul li{
+                    color:  #333333;
+                    font-size: 20px;
+                    font-family: var(--font-family-Poppins);
+                    font-weight: 500;
+                    margin-right: 15px;
+                }
+                .header ul li:last-child{
+                    margin-right: 0;
+                }
+                .header ul li a{
+                    padding: 5px 10px !important;
+                    font-weight: 500;
+                }
+                .header ul li a:hover{
+                    /* background-color: #FCACB4; */
+                    color: #854a1a;
+                    transition: 0.5sec !important;
+                }
+
+                .header2 {
+                    background-color:  #f8e6c2;
+                }
+
+                .header2 h1{
+                    font-family: var(--font-family-Montserrat);
+                    font-weight: bold;
+                    font-size: 70px;
+                    color: #333333;
+                }
+
+                .header2 img{
+                    overflow: hidden;
+                    transition: transform 0.2s;
+                }
+
+                .header2 img:hover{
+                    transform: scale(1.1); 
+                }
+
+                .header2 p {
+                    font-family: var(--font-family-Poppins);
+                    font-weight: light;
+                    font-size: 16px;
+                }
+
+                .header2 button{
+                    font-family: var(--font-family-Poppins);
+                    font-weight: bold;
+                    padding: 10px 20px;
+                    border-radius: 0.3rem;
+                    background-color: #854a1a;
+                    color:#fff;
+                    border: none;
+                    text-transform: uppercase;
+                }
+
+                .header2 button:hover {
+                    background-color:  #333333!important;
+                    /* color: #141319; */
+                }
+
+                .header2{
+                    margin-top: 70px !important;
+                }
+
+                /* .gallery{
+                    background-color: #FFDEDE;
+                } */
+
+                .gallery img{
+                    overflow: hidden;
+                    transition: transform 0.2s;
+                }
+
+                .gallery img:hover{
+                    transform: scale(1.1); 
+                }
+                .gallery h2 {
+                    font-weight: bold;
+                    padding: 5px 0px;
+                    font-size: 60px;
+                    color: #333333;
+                }
+                .gallery-box{
+                    width: 100% !important;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #f8e6c2;
+                    padding: 10px;
+                    border: 1px solid #f1f1f1;
+                }
+
+                .gallery-img{
+                    width: 100%;
+                    height: 250px;
+                    padding: 20px;
+                    display: flex;
+                    margin: auto;
+                    position: relative;
+                }
+
+                .gallery-img img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+
+                .gallery-img span {
+                    position: absolute;
+                    left:10px;
+                    top: 10px;
+                    background-color:#854a1a!important;
+                    color: #f1f1f1 !important;
+                    padding: 3px 10px;
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                }
+
+                .gallery-text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 5px 20px;
+                }
+
+                .gallery-text span{
+                    color: #8b3d74;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                }
+
+                .gallery-text a{
+                    color: #1d1d1d;
+                    font-weight: 600;
+                    font-size: 1.rem;
+                    text-decoration: none;
+                }
+
+                .gallery>div>div:nth-child(2){
+                    row-gap: 24px !important    ;
+                }
+
+                .gallery button {
+                    padding: 10px 20px;
+                    border-radius: 0.3rem;
+                    background-color: #854a1a; 
+                    color: #f1f1f1;
+                    font-family: var(--font-family-Poppins);
+                    font-weight: bold;
+                    margin: 5px 0px;
+                    border: none;
+                    
+                }
+
+                .gallery button:hover {
+                    background-color:  #333333;
+                    /* color: #141319; */
+                }
+
+                .gallery h5{
+                    text-transform: capitalize;
+                    color: #333333;
+                }
+
+                .active>.page-link{
+                    background-color: #854a1a !important;
+                    box-shadow: none !important;
+           
+                }
+
+                .custome img {
+                    width: 100%;
+                    max-width: 372.39px !important;
+                }
+
+                .explore p {
+                    font-size: 16px;
+                }
+                
+                .page-navigation{
+                    background-color: #edd1d4;
+                }
+
+                .page-link  {
+                    box-shadow: none !important;
+                }
+
+                .footer{
+                    background:#212529 !important;
+                    color: #fff;
+                }
+                .footer address,p{
+                    margin-bottom: px;
+                    text-transform: capitalize;
+                    text-align: left;
+                    font-size: 20px;
+                }
+                .footer li {
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+                }
+                .footer a{
+                    text-decoration: none;
+                    font-family: "Roboto", serif;
+                    font-size: 20px;
+                    color: #fff;
+                }
+                .footer a:hover{
+                    color: #854a1a;
+                    text-decoration: none;
+                }
+
+                .modal .btn {
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+                .btn1,
+                .btn2 {
+                    background: #854a1a;
+                    color: #fff;
+                    outline: none;
+                    border: none;
+                    padding: 10px 16px;
+                    border-radius: 0.3rem;
+                    font-size: 16px;
+                }
+                .btn1:hover,
+                .btn2:hover{
+                    background: #333333;
+                }
+                .req{
+                    color: #854a1a;
+                }
+
+                @media (max-width:600px) {
+                    .custom-width {
+                    width: auto;
+                    display: none;
+                 }
+
+                .header2>div>div>div:nth-child(1){
+                    order: 2;
+                    padding-top:0px !important;
+                    text-align: center;
+                }
+
+                .header2 h1{
+                    padding-top: 0px !important;
+                    font-size: 30px;
+                }
+
+                .header2 button{
+                    padding: 8px 15px;
+                    font-size: 10px;
+                }
+
+                .header2{
+                    padding: 24px 0px;
+                }
+
+                .header2 p{
+                    text-align: center;
+                }
+
+                .gallery h5{
+                    width: 100px;
+                    white-space: nowrap;
+                    overflow:hidden;
+                    text-overflow: ellipsis;
+                }
+                .gallery h2{
+                    padding: 5px 0px !important;
+                    font-size: 30px;
+                }
+
+                .gallery>div>div{
+                    padding: 10px 0px !important;
+                }
+
+                .gallery button{
+                    padding: 8px 15px;
+                    font-size: 10px;
+                }
+
+                    
+                .modal-content {
+                    position: relative !important;
+                }
+
+                .modal-content>button:nth-child(1) {
+                    position: absolute !important;
+                    right: -8px !important;
+                    z-index: 99 !important;
+                }
+
+                .modal-content>button:nth-child(1) svg {
+                    fill: #000 !important;
+                }
+
+                .explore h3{
+                    font-size: 20px;
+                }
+
+                .explore h5{
+                    font-size: 18px;
+                }
+
+                .footer h3{
+                    font-size: 20px;
+                }
+
+                .footer ul li a{
+                    font-size: 16px !important;
+                }
+
+                .footer p {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    align-items: center;
+                }
+
+                .footer>div>div>div:nth-child(2) h3 {
+                    margin-top: 10px;
+                }
+
+                .footer>div>div {
+                    padding : 30px 0px !important;
+                }
+
+                }
+
+                @media (min-width:720px) and (max-width:960px) {
+                .header2>div>div>div:nth-child(1){
+                    order: 2;
+                }
+    
+                .header2>div>div>div:nth-child(1){
+                    padding-top: 0px !important;
+                    text-align: center;
+                }
+     
+                .header2 h1{
+                    padding-top: 0px !important;
+                    font-size: 48px;
+                }
+
+                .header2 p{
+                    font-size: 18px;
+                    text-align: center;
+                }
+
+                .header2 button{
+                    padding: 10px 20px;
+                }
+                
+                .header2{
+                    padding: 24px 0px;
+                }
+
+                .gallery h2{
+                    font-size: 48px;
+                }
+
+                .gallery h5{
+                    width: 100px;
+                    white-space: nowrap;
+                    overflow:hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .gallery button{
+                    font-size: 10px;
+                }
+
+
+                .explore p{
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+
+                .explore h3{
+                    font-size: 30px;
+                }
+
+                .explore h5{
+                    font-size: 25px;
+                }
+
+                .footer>div>div {
+                    padding : 30px 0px !important;
+                }
+                }
+
+            </style>
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+            <nav
+                class="navbar navbar-expand-sm p-0 fixed-top shadow-sm" style="background-color: #F8F9FA ;"
+            >
+                <div class="container header my-2">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo1.png" alt="" width="150px" height="auto">
+                    </a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    > 
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <div class="d-flex custom-width justify-content-center ms-3 ">
+                            <div class="d-none d-lg-block w-100">
+                                <form class="input-group border-0 py-1 rounded-pill" style="border: 1px solid #333 !important;" >
+                                    <button class="btn border-0 my-2 my-sm-0" type="submit">
+                                        <i class="fa fa-search text-dark" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" class="form-control border-0 me-sm-2 bg-transparent"  placeholder="Search" />
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <!-- <a class="nav-link active" href="#" aria-current="page"
+                                    >HOME
+                                    <span class="visually-hidden">(current)</span></a
+                                > -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="shop.html">MAKEUP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product-index.html">SKINCARE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact us.html">CONTACT</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li> -->
+                    
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="nav-btns width-100% height-auto mx-3">
+                            <!--cart-->
+                            <a href="cart.html" class="btn btn-outline-dark">
+                                <i class="bi bi-cart"></i>
+                            </a>
+                        </div>
+                        <!-- <div class="dropdown">
+                            <a href="#" class="btn btn-outline-dark  ">   
+                                <i class="bi bi-person-circle my-sm-0 "></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#loginModal">Login</a></li>
+                            </ul>
+                        </div> -->
+                        <div class="dropdown ">
+                            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="bi bi-person-circle"></i></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-black text-center bg-transparent" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+             </nav>
+            <div class="container-fluid header2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 pt-5 ">
+                            <h1 class=" pt-5">The Best Care Youth Secret</h1>
+                            <p class="my-3">Beyond physical health, cosmetics can help to improve our mood, enhance our appearance and boost our self-esteem. They can also help to exhibit personal style and, as such, are an important means of social expression.</p>
+                            <a href="shop-2.html" class="icon-link text-decoration-none">
+                                <button>shop now</button>
+                           </a>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <img src="images/best skincare for acne copy.png" class="img-fluid animate__animated animate__zoomInDown" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container-fluid gallery py-5 ">
+                <div class="container">
+                    <h2 class="display-3 text-center">Skin Care Products</h2>
+                    <div class="row py-5">
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href="#"class="gallery-img">
+                                    <img src="images/skin-care-6.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>dr ultra gentle daily peel</h5></a>
+                                    <span>&#8377;300</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/skin-care-3.png" class="img-fluid" alt="">
+                                <span>30% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5> the ordinary face serum</h5></a>
+                                    <span>&#8377;450</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/mDL55Ml6B_-000000000494434557_1.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>the cryo glow mask</h5></a>
+                                    <span>&#8377;650</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/skin-care-7.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>lancome clarifique dual essence</h5></a>
+                                    <span>&#8377;500</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/z9pSHGWPgH-000000000491942242_1.png" class="img-fluid" alt="">
+                                <span>50% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>estee lauder complex</h5></a>
+                                    <span>&#8377;400</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col  col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/skin-care-8.png" class="img-fluid" alt="">
+                                <span>60% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>pixi vitamin-c serum</h5></a>
+                                    <span>&#8377;250</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/derma.png" class="img-fluid" alt="">
+                                <span>40% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>derma cosali-cinamide face wash</h5></a>
+                                    <span>&#8377;300</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href="#"class="gallery-img">
+                                    <img src="images/makeup-1.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>laneige lip sleeping mask berry</h5></a>
+                                    <span>&#8377;400</span>
+                                    <a href="#"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/makeup-2.png" class="img-fluid" alt="">
+                                <span>30% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>sephora moisturizing Foundation</h5></a>
+                                    <span>&#8377;450</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/lakme.png" class="img-fluid" alt="">
+                                <span>50% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>lakme 9to5 bb cream</h5></a>
+                                    <span>&#8377;350</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/makeup-6.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>pixi on the glow blush</h5></a>
+                                    <span>&#8377;300</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/skincare.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>squalane marine cream</h5></a>
+                                    <span>&#8377;500</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/skin-care-1.png" class="img-fluid" alt="">
+                                <span>50% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>the ordinary serum</h5></a>
+                                    <span>&#8377;500</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/skin-care-3.png" class="img-fluid" alt="">
+                                <span>30% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>the Ordinary face wash</h5></a>
+                                    <span>&#8377;200</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/skin-care-6.png" class="img-fluid" alt="">
+                                <span>30% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>dr dennis gross peel</h5></a>
+                                    <span>&#8377;300</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="gallery-box">
+                                <a href=""class="gallery-img">
+                                    <img src="images/skin-care-5.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="gallery-text">
+                                    <a href="#" class="gallery-title"><h5>dear dehalia matt foundation</h5></a>
+                                    <span>&#8377;600</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3 ">
+                    <div class="col">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination pagination-lg justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid explore py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Explore Body Care Products and Face Care Products Online</h3>
+                            <p >No one likes to have dry and chapped skin. But, the changing weather, the moisture content in the air, and other environmental factors result in your skin becoming dry. The best way to maintain soft and supple skin is by incorporating body care products and face care products in your daily skincare routine. Even the soaps and body wash products that you use may contain harsh chemicals, which will cause your skin to dry out. If left untreated, you will experience scaling, itching, and cracking of the skin. The skin is the largest organ of our body and it is exposed to various chemicals, UV rays, weather changes, and more. Hence, it becomes important that we take care of it in the best possible way. Let us now take a look at some of the ways in which we can take care of our skin</p>
+                            <h5>Easy and Effective Ways to Combat Dry Skin</h5>
+                            <p>The first and the most important step to achieve healthy and smooth skin is by hydrating it. You need to drink about 1 - 2 liters of water every day and also consume lots of fruits and vegetables. The next step is by investing in quality body care products and face care products. As your skin is exposed to dust and pollution when you step outdoors, you need to buy good-quality cleansers, exfoliators, and face washes to keep your facial skin dirt- and pollution-free. Check out products that are offered by popular brands, like Nivea, Himalaya, Clean & Clear, Muuchstac, Fair & Lovely, Beardo, and more. Exfoliators help get rid of dead cells, resulting in smoother, brighter, and more refined skin. Use toners to remove any dirt or oil residues that might have been left behind after washing your face. The next step to maintain the softness and suppleness of the skin is by using moisturizers. These skin creams are formulated using various ingredients that help deeply nourish and revitalize your skin. Check out products that are offered by reputed brands, such as Vaseline, Garnier, Nivea, Biotique, Ponds, Lakme, Olay, and more. Also, you need to replace any harsh soaps with gentle body soaps or organic soaps. Check out some of the gentle and skin-friendly soap brands, like Pears, Nature's Essence, Dettol, Speaking Tree, Sebamed, Herbal Trends, and more. </p>
+                            <h5>Buy Face Care and Body Care Products Online</h5>
+                            <p>You can purchase the best face care products and body care products from your favorite online shopping site. Furthermore, if you are stepping out of your home during the day, you need to apply a sunscreen lotion or cream that comes with a high SPF level. These creams and lotions help protect your delicate skin from the harsh UVA and UVB rays of the sun. You can check out some of the best brands, like Neutrogena, Lakme, Lotus Herbals, Biotique, WOW Skin Science, Mamaearth, and more. To reduce the effect of suntan and improve the complexion of your skin, you can try using fairness creams that are offered by brands such as Ponds, Lakme, Fair & Handsome, Faiza, Vicco, and many more. Moreover, following a proper skincare regimen goes a long way in ensuring that your skin is soft, moisturized, and healthy, despite it being exposed to various harmful factors throughout the day</p>
+                            <p>under 40 products: <a href="#"> Moisturizer below 500 | Face pack below 500</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+            <div class="container-fluid footer bg-dark text-light">
+                <div class="container">
+                    <div class="row py-5">
+                      <div class="col-6 col-md-3 mb-3 pt-4">
+                        <img src="images/footer-logo.png" alt="" width="150px" height="auto">
+                          <p>Fashion Demo Store, Demo Store India 345-659</p>
+                          <p>Call Us: 123-456-7898</p>
+                          <p>Email Us: Support@fashion.com</p>
+                      </div>
+                
+                      <div class="col mb-3">
+                        <h3 class="pt-4">About</h3>
+                        <ul class="nav flex-column ">
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Term & Policy</a></li>
+                          <li><a href="#">Careers</a></li>
+                          <li><a href="#">News & Blog</a></li>
+                          <li><a href="#">Careers</a></li>
+                        </ul>
+                      </div>
+                
+                      <div class="col mb-3">
+                        <h3 class="pt-4">Catigories</h3>
+                        <ul class="nav flex-column  ">
+                          <li><a href="#">Acne Marks</a></li>
+                          <li><a href="#">Pigmentations/ Dark Spots</a></li>
+                          <li><a href="#">Acne/Pimple</a></li>
+                          <li><a href="#">Acne Scars</a></li>
+                          <li><a href="#">Open Pores</a></li>
+                        </ul>
+                      </div>
+                
+                      <div class="col-md-4 mb-3">
+                        <form>
+                          <h3 class="pt-4">Help</h3>
+                          <p>Monthly digest of what's new and exciting from us.</p>
+                          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="letter " type="button">Sumbit</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+                      <p>© 2024 Company, Inc. All rights reserved.</p>
+                      <ul class="list-unstyled d-flex">
+                          <img src="images/payment-method_69e7ec.svg" alt="" class="d-block w-100 img-fluid me-5">
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- login Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+              <div class="modal-content" style="position: relative;">
+                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+                  style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                    fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+                    <path
+                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                  </svg>
+                </button>
+                <div class="modal-body p-0">
+                  <div class="container-fluid g-0">
+                    <div class="row">
+                      <div class="col d-flex flex-column p-5">
+                        <div class="row mb-5 pb-5">
+                          <div class="col">
+                            <form class="row g-3">
+                              <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Enter Email/Mobile Number</label>
+                                <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                              </div>
+                              <div class="d-grid">
+                                <button class="btn1" type="button">Request OTP</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="row align-items-end mt-5 pt-5">
+                          <div class="col text-center ">
+                            <a href="#exampleModal2" class="req" data-bs-toggle="modal">New to EVITA? Create an
+                              account</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        <!-- Modal2 -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+              <div class="modal-content" style="position: relative;">
+                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+                  style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                    fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+                    <path
+                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                  </svg>
+                </button>
+                <div class="modal-body p-0">
+                  <div class="container-fluid g-0">
+                    <div class="row">
+                      <div class="col d-flex flex-column p-5">
+                        <div class="row mb-5 pb-5">
+                          <div class="col">
+                            <form class="row g-3">
+                              <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Enter Mobile Number</label>
+                                <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                              </div>
+                              <div class="d-grid">
+                                <button class="btn2" type="button">Continue</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="row align-items-end mt-5 pt-5">
+                          <div class="col text-center ">
+                            <a href="exampleModal1" class="req" data-bs-toggle="modal">Existing User? Log in</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+        </div>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

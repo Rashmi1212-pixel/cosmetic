@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>beauty</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- animation css -->
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+        <!-- font-awesome 4.7.0 CSS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+               integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+               crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Bootstrap Icons -->
+           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"crossorigin="anonymous"/>
+            <link rel="stylesheet" href="style.css">
+         <!--owlcrausal-->
+         <link rel="stylesheet"
+         href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+         <link rel="stylesheet"
+             href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+            <script src="http://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+            <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>  
+        <style>
+             
+            .container-fluid{
+                width: 100% !important;
+            }
+
+            .container{
+                max-width: 1600px !important;
+            }
+
+            /* #searchBar {
+                display: none;
+            } */
+    
+            .custom-width {
+                width: 100%;
+            }
+            .hero{
+                margin-top: 70px !important;
+            }
+            .form {
+              color:#FFDEDE;
+            }
+            .form-control:focus{
+                box-shadow: none !important;
+            }
+            input{
+                width: 100%;
+             }
+
+            /* .form.input-group{
+                border: 1px solid black !important;
+            } */
+            
+            .owl-img{
+                width: 100%;
+                height: 300px;
+                object-fit: contain;
+            }
+
+            .product .card-body span {
+                color: #854a1a;
+            }
+
+            /* #searchBar {
+                display: none;
+            } */
+            
+
+    
+            @media (max-width:600px) {
+                .custom-width {
+                    width: auto;
+                    display: none;
+                }
+                .owl-img {
+                    height: 159px;
+                    object-fit: cover;
+                }
+
+                .card-body{
+                    padding:10px;
+                    align-items: center;
+                }
+            }
+            </style>
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+                <nav
+                class="navbar navbar-expand-sm p-0 fixed-top shadow-sm" style="background-color: #F8F9FA ;"
+             >
+                <div class="container header my-2">
+                    <a class="navbar-brand" href="shop.html">
+                        <img src="images/logo1.png" alt="" width="150px" height="auto">
+                    </a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    > 
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+                        <div class="d-flex custom-width justify-content-center ms-3 ">
+                            <div class="d-none d-lg-block w-100">
+                                <form class="input-group border-0 py-1 rounded-pill " style="border: 1px solid #333 !important;" >
+                                    <button class="btn border-0 my-2 my-sm-0" type="submit">
+                                        <i class="fa fa-search text-dark" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" class="form-control border-0 me-sm-2 bg-transparent"  placeholder="Search" />
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <!-- <a class="nav-link active" href="#" aria-current="page"
+                                    >HOME
+                                    <span class="visually-hidden">(current)</span></a
+                                > -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="shop.html">MAKEUP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product-index.html">SKINCARE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact us.html">CONTACT</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li> -->
+                     
+                        </ul>
+                   
+                    </div>
+                    <div>
+                        <div class="nav-btns width-100% height-auto mx-3">
+                            <!--cart-->
+                            <a href="cart.html" class="btn btn-outline-dark">
+                                <i class="bi bi-cart"></i>
+                            </a>
+                        </div>
+                        <!-- <div class="dropdown">
+                            <a href="#" class="btn btn-outline-dark  ">   
+                                <i class="bi bi-person-circle my-sm-0 "></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#loginModal">Login</a></li>
+                            </ul>
+                        </div> -->
+                        <div class="dropdown ">
+                            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="bi bi-person-circle"></i></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-black  text-center bg-transparent" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 pt-5 ">
+                            <h1 class=" pt-5">The Best Care Youth Secret</h1>
+                            <p class="my-3">Beyond physical health, cosmetics can help to improve our mood, enhance our appearance and boost our self-esteem. They can also help to exhibit personal style and, as such, are an important means of social expression.</p>
+                            <a href="shop.html" class="icon-link text-decoration-none">
+                                <button>shop now</button>
+                           </a>
+                        </div>
+                        <div class="col-lg-6 py-0">
+                        <img src="images/pexels-misolo-cosmetic-2588316-6847833 (1).png" class="animate__animated animate__fadeInRight img-fluid float-end" alt="" >
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container-fluid product my-5">
+                <div class="container" >
+                    <div class="row  row-cols-1 row-cols-lg-4 text-center">
+                        <div class="owl-carousel owl-theme ">
+                            <div class="col shadow-sm">
+                                <div class="card ">
+                                    <div>
+                                        <img src="images/makeup-3.png" class="owl-img" alt="...">
+                                    </div>
+                                    
+                                    <div class="card-body">
+                                      <h5 class="card-title">Soft-Pinch Liquid Blush</h5>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star text-dark"></span><span>  4/5</span>
+                                      <h5>&#8377;3,829</h5> 
+                                      <a href="shop.html" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <div>
+                                        <img src="images/lips.png" class=" owl-img" alt=""  >
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Lakme 9to5 Matte Lipstick</h5>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star"></span><span>  5.5/5</span>
+                                      <h5>&#8377;210</h5> 
+                                      <a href="#" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm" >
+                                    <img src="images/beauty.png" class="owl-img" alt=""  >
+                                    <div class="card-body">
+                                      <h5 class="card-title">HUDA Beauty Foundation</h5>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star text-dark"></span><span> 4.5/5</span>
+                                      <h5>&#8377;350</h5> 
+                                      <a href="#" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <img src="images/skincare.png" class="owl-img" alt=""  >
+                                    <div class="card-body">
+                                    <h5 class="card-title">Squalane Skincare</h5>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star text-dark "></span>
+                                    <span class="fa fa-star text-dark"></span><span>  3.5/5</span>
+                                    <h5>&#8377;200</h5> 
+                                    <a href="#" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <img src="images/mascra.png" class="owl-img" alt=""  >
+                                    <div class="card-body">
+                                    <h5 class="card-title">Precisely My Brow Wax</h5>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><span>  5.5/5</span>
+                                    <h5>&#8377;350</h5> 
+                                    <a href="#" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <img src="images/perfume.png" class="owl-img" alt=""  >
+                                    <div class="card-body">
+                                      <h5 class="card-title">Dior Perfume</h5>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span><span>  5.5/5</span>
+                                      <h5>&#8377;320</h5> 
+                                      <a href="#" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="images/blusher.png" class="owl-img" alt=""  >
+                                    <div class="card-body">
+                                      <h5 class="card-title">Blush Powder</h5>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star text-dark"></span><span>  4.5/5</span>
+                                      <h5>&#8377;150</h5> 
+                                      <a href="#" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <img src="images/cream.png" class="owl-img" alt=""  >
+                                    <div class="card-body">
+                                      <h5 class="card-title">Lip Glowy Balm</h5>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star"></span><span> 5.5/5</span>
+                                      <h5>&#8377;500</h5> 
+                                      <a href="#" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <img src="images/BGrGQObvD5-1_Product_729238160439-Shiseido-White-Lucent-Illuminating-Micro-Spot-Serum-30ml_b84cded83a609aa084ccd82b54dbdc5ab4c94c16_1578472373.png" class="owl-img" alt=""  >
+                                    <div class="card-body">
+                                      <h5 class="card-title">Micro-Spot Serum</h5>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star text-dark"></span><span>  4.5/5</span>
+                                      <h5>&#8377;300</h5> 
+                                      <a href="#" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <img src="images/koY4PHlUbK-000000000493640668_1.png" class="owl-img" alt=""  >
+                                    <div class="card-body">
+                                      <h5 class="card-title">Born This Way Foundation</h5>
+                                      <span class="fa fa-star checked "></span>
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star"></span><span>  5.5/5</span>
+                                      <h5>&#8377;350</h5> 
+                                      <a href="#" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="images/mDL55Ml6B_-000000000494434557_1.png" class="owl-img" alt=""  >
+                                    <div class="card-body">
+                                      <h5 class="card-title">The Cryo Mask</h5>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star text-dark"></span>
+                                      <span class="fa fa-star text-dark"></span><span>  3.5/5</span>
+                                      <h5>&#8377;350</h5> 
+                                      <a href="#" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <img src="images/QMO3Yj295BA-000000000494512872_1.png" class="owl-img" alt=""  >
+                                    <div class="card-body">
+                                      <h5 class="card-title">Rare Beauty</h5>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star "></span>
+                                      <span class="fa fa-star"></span><span>  5.5/5</span>
+                                      <h5>&#8377;500</h5> 
+                                      <a href="#" class="icon-link text-decoration-none"><button>shop now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid new-arival my-5 ">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about content ">
+                                <h3 >Genius Tips For Clear Skin.</h3>
+                                <ul>
+                                    <li>Always wear sunscreen.</li>
+                                    <li>Don't skip exfolition.</li>
+                                    <li>U se face serum and apply moisturiser daily.</li>
+                                    <li>always remove makeup before bad.</li>
+                                    <li>Indulge in face steam session.</li>
+                                    <li>Popping pimples is a big no.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <div class="new-arival-box">
+                                <a href="blog.html"class="new-arival-img">
+                                    <img src="images/girl (2).png"  class="img-fluid " alt="">
+                                <span>skin care</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid new-product my-5 ">
+                <div class="container">
+                    <h2 class=" py-3">Best Seller Cosmetic</h2>
+                    <div class="row py-5">
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/face wash.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>Face Wash for women</h5></a>
+                                    <span>&#8377;300</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/vitamin-c.png" class="img-fluid" alt="">
+                                <span>30% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>face serum for women</h5></a>
+                                    <span>&#8377;450</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/onion.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>Hair oil for women</h5></a>
+                                    <span>&#8377;650</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/100-skin-perfecting-face-wash-with-niacinamide-ceramides-original-imaha8brja8qsj7m.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>Face wash for women</h5></a>
+                                    <span>&#8377;500</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/body-lotion.png" class="img-fluid" alt="">
+                                <span>50% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>Body lotion for women</h5></a>
+                                    <span>&#8377;400</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col  col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/vitamin-cream.png" class="img-fluid" alt="">
+                                <span>60% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>face serum for women</h5></a>
+                                    <span>&#8377;250</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/derma.png" class="img-fluid" alt="">
+                                <span>40% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>derma face wash for women</h5></a>
+                                    <span>&#8377;300</span>
+                                    <a href="cart-2.html"><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/eleven.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>hair livon for women</h5></a>
+                                    <span>&#8377;400</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/lip.png" class="img-fluid" alt="">
+                                <span>30% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>lipstic for women</h5></a>
+                                    <span>&#8377;450</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/lakme.png" class="img-fluid" alt="">
+                                <span>50% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>lakme cream for women</h5></a>
+                                    <span>&#8377;350</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/kajal.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>kajal for women</h5></a>
+                                    <span>&#8377;300</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/eyeshadow.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>eye eyeshadow for women</h5></a>
+                                    <span>&#8377;500</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/conceler.png" class="img-fluid" alt="">
+                                <span>50% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>conceler for women</h5></a>
+                                    <span>&#8377;500</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/garnier.png" class="img-fluid" alt="">
+                                <span>30% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>Garnier face wash for women</h5></a>
+                                    <span>&#8377;200</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/lips.png" class="img-fluid" alt="">
+                                <span>30% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>Matt Lipstic for women</h5></a>
+                                    <span>&#8377;300</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="new-product-box">
+                                <a href=""class="new-product-img">
+                                    <img src="images/pack.png" class="img-fluid" alt="">
+                                <span>20% off</span>
+                                </a>
+                                <div class="new-product-text">
+                                    <a href="#" class="new-product-title"><h5>Matt full pack lipstic for women</h5></a>
+                                    <span>&#8377;600</span>
+                                    <a href=""><button>ADD TO CART</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid vintage my-5">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col  ">
+                            <div class="owl-carousel owl-theme ">
+                                <div class="col ">
+                                    <div class="item">
+                                        <img src="images/ocea.png"  alt="" class="img-fluid ">
+                                    </div> 
+                                </div>
+                                <div class="col">
+                                    <div class="item">
+                                        <img src="images/11.png"  alt="" class="img-fluid">  
+                                    </div> 
+                                </div>
+                                <div class="col">
+                                    <div class="item">
+                                        <img src="images/111.png" alt="" class="img-fluid ">
+                                    </div> 
+                                </div>
+                                <div class="col">
+                                    <div class="item">
+                                        <img src="images/1111.png" alt="" class="img-fluid "> 
+                                    </div> 
+                                </div>
+                                <div class="col">
+                                    <div class="item">
+                                        <img src="images/11111.png" alt="" class="img-fluid "> 
+                                    </div> 
+                                </div>
+                                <div class="col">
+                                    <div class="item">
+                                        <img src="images/111111.png" alt="" class="img-fluid"> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="contianer-fluid complex my-5">
+                <div class="container">
+                    <div class="row py-4">
+                        <div class="col-lg-6 p-0">
+                            <img src="images/cs.png" alt="" class="img-fluid animate__animated animate__fadeInLeft animate__infinite	infinite">
+                        </div>
+                        <div class="col-lg-6  pt-4">
+                            <h3 class=" pt-5">skin care our duty </h3>
+                            <p class="my-3">A solid skincare routine is key to maintaining skin health. It helps keep your skin clean, exfoliates dead cells, and nourishes it with essential nutrients. Investing in skincare can prevent common skin issues like acne, dryness, and uneven skin tone.</p>
+                            <a href="product-index.html"><button>shop now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid new-derma my-5">
+                <div class="container">
+                    <div class="row g-3">
+                        <div class="col-lg-6 p-0">
+                            <a href="#"class="new-derma-img">
+                                <img src="images/vitaminc.jpg"  class="img-fluid " alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <a href="#"class="new-derma-img">
+                                <img src="images/salicylic.jpg"  class="img-fluid " alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+           <!-- place footer here -->
+        <footer>
+            <div class="container-fluid footer bg-dark text-light">
+                <div class="container">
+                    <div class="row py-5">
+                      <div class="col-6 col-md-3 mb-3 pt-4">
+                        <img src="images/footer-logo.png" alt="" width="150px" height="auto">
+                          <p >Fashion Demo Store, Demo Store India 345-659</p>
+                          <p>Call Us: 123-456-7898</p>
+                          <p>Email Us: Support@fashion.com</p>
+                      </div>
+                
+                      <div class="col mb-3">
+                        <h3 class="pt-4">about</h3>
+                        <ul class="nav flex-column ">
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Term & Policy</a></li>
+                          <li><a href="#">Careers</a></li>
+                          <li><a href="#">News & Blog</a></li>
+                          <li><a href="#">Careers</a></li>
+                        </ul>
+                      </div>
+                
+                      <div class="col mb-3">
+                        <h3 class="pt-4"> Catigories</h3>
+                        <ul class="nav flex-column  ">
+                          <li><a href="#">Acne Marks</a></li>
+                          <li><a href="#">Pigmentations/ Dark Spots</a></li>
+                          <li><a href="#">Acne/Pimple</a></li>
+                          <li><a href="#">Acne Scars</a></li>
+                          <li><a href="#">Open Pores</a></li>
+                        </ul>
+                      </div>
+                
+                      <div class="col-md-4 mb-3">
+                        <form>
+                          <h3 class="pt-4">Help</h3>
+                          <p>Monthly digest of what's new and exciting from us.</p>
+                          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input type="text" class="form-control" placeholder="Email address">
+                            <button class="letter " type="button">Sumbit</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+                      <p>© 2025 Company Inc All rights reserved.</p>
+                      <ul class="list-unstyled d-flex">
+                          <img src="images/payment-method_69e7ec.svg" alt="" class="d-block w-100 img-fluid me-5">
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- login Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+              <div class="modal-content" style="position: relative;">
+                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+                  style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                    fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+                    <path
+                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                  </svg>
+                </button>
+                <div class="modal-body p-0">
+                  <div class="container-fluid g-0">
+                    <div class="row">
+                      <div class="col d-flex flex-column p-5">
+                        <div class="row mb-5 pb-5">
+                          <div class="col">
+                            <form class="row g-3">
+                              <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Enter Email/Mobile Number</label>
+                                <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                              </div>
+                              <div class="d-grid">
+                                <button class="btn1" type="button">Request OTP</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="row align-items-end mt-5 pt-5">
+                          <div class="col text-center ">
+                            <a href="#exampleModal2" class="req" data-bs-toggle="modal">New to EVITA? Create an
+                              account</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+          <!-- Modal2 -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+              <div class="modal-content" style="position: relative;">
+                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+                  style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                    fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+                    <path
+                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                  </svg>
+                </button>
+                <div class="modal-body p-0">
+                  <div class="container-fluid g-0">
+                    <div class="row">
+                      <div class="col d-flex flex-column p-5">
+                        <div class="row mb-5 pb-5">
+                          <div class="col">
+                            <form class="row g-3">
+                              <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Enter Mobile Number</label>
+                                <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                              </div>
+                              <div class="d-grid">
+                                <button class="btn2" type="button">Continue</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="row align-items-end mt-5 pt-5">
+                          <div class="col text-center ">
+                            <a href="exampleModal1" class="req" data-bs-toggle="modal">Existing User? Log in</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        <!--owl-carousal-->
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin: 20,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:2
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+        </script>
+
+         <!--owl-carousal-->
+                    <!--owl craousal auto play-->
+        <!-- <script>
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items:4,
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:1000,
+                autoplayHoverPause:true
+            });
+            $('.play').on('click',function(){
+                owl.trigger('play.owl.autoplay',[1000])
+            })
+            $('.stop').on('click',function(){
+                owl.trigger('stop.owl.autoplay')
+            })
+        </script> -->
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

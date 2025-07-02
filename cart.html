@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>cart</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <!-- font-awesome 4.7.0 CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"crossorigin="anonymous"/>
+            <link rel="stylesheet" href="style.css">
+       
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .container-fluid{
+                width: 100%;
+            }
+
+            .container{
+                max-width: 1600px !important;
+            }
+
+            .header{
+                max-width: 1600px !important;
+                color: #fff;
+            }
+
+            .header ul li{
+                color:  #333333;
+                font-size: 20px;
+                font-family: var(--font-family-Poppins);
+                font-weight: 500;
+                margin-right: 15px;
+            }
+            .header ul li:last-child{
+                margin-right: 0;
+            }
+            .header ul li a{
+                padding: 5px 10px !important;
+                font-weight: 500;
+            }
+            .header ul li a:hover{
+                /* background-color: #FCACB4; */
+                color: #854a1a;
+                transition: 0.5sec !important;
+            }
+
+            
+            .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+                color: #854a1a;
+            }
+
+            #searchBar {
+                display: none;
+            }
+            
+            .custom-width {
+                width: 100%;
+            }
+
+            .form-control:focus{
+                box-shadow: none !important;
+            }
+
+
+            .cart {
+                display: flex;
+                margin: 30px auto;
+              
+               
+            }
+
+            .buy{
+                /* width: 50%; */
+                text-align: center;
+            }
+
+            .big-img{
+                width: 100%;
+                /* border: 1.5px solid black; */
+            }
+
+            .big-img img{
+                width: inherit;
+            }
+
+            .images{
+                display: flex;
+                /* justify-content: space-between; */
+                margin-top: 15px;
+                width: 100%;
+            }
+
+            .small-img{
+                width: 100%;
+                /* border: 1.5px solid black; */
+                margin-right: 10px;
+            }
+
+            .small-img img{
+                width: 100%;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            /* .small-img:hover img{
+                transform: scale(1.2);
+            } */
+
+            .right{
+                /* margin-top: 20px; */
+                display: flex;
+            }
+
+            .beauty span{
+                color: #854a1a;
+            }
+
+            .shade{
+                display: flex;
+                margin-top: 15px;
+                width: 20%;
+                cursor: pointer;
+                /* border: 1.5px solid black; */
+             
+            }
+
+            .shade-img{
+                margin-right: 5px;
+            }
+
+            .quantity{
+                display: flex;
+            }
+
+            .quantity p{
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .quantity input{
+                width: 40px;
+                font-size: 17px;
+                font-weight: bold;
+                text-align: center;
+                margin-left: 15px;
+            }
+
+            .btn-box{
+                display: flex;
+                margin: 20px 0;
+            }
+
+            .btn-box button{
+                font-size: 18px;
+                padding: 10px 20px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                color: #F8F9FA;
+                font-weight: bold;
+            }
+
+            .cart-btn{
+                background-color: #854a1a;
+                margin-right: 10px;
+            }
+
+            .cart-btn:hover{
+                background-color: #333333;
+            }
+
+            .buy-btn{
+                background-color:  #854a1a;
+            }
+
+            .buy-btn:hover{
+                background: #333333;
+            }
+
+            .accordion-body p{
+                font-size: 16px;
+            }
+
+            .accordion-header button{
+                background-color:transparent !important;
+                box-shadow: none !important;
+            }
+            .explore p{
+                font-size: 16px;
+            }
+
+
+            .footer{
+                background:#212529 !important;
+                color: #fff;
+            }
+            .footer address,p{
+                margin-bottom: px;
+                text-transform: capitalize;
+                text-align: left;
+                font-size: 20px;
+            }
+            .footer li {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+            }
+            .footer a{
+                text-decoration: none;
+                font-size: 20px;
+                color: #fff;
+            }
+            .footer a:hover{
+                color: #854a1a;
+                text-decoration: none;
+            }
+
+            
+            .modal .btn {
+                    border: none !important;
+                    box-shadow: none !important;
+            }
+            .btn1,
+            .btn2 {
+                background: #854a1a;
+                color: #fff;
+                outline: none;
+                border: none;
+                padding: 10px 16px;
+                border-radius: 0.3rem;
+                font-size: 16px;
+            }
+            .btn1:hover,
+            .btn2:hover{
+                background: #333333;
+            }
+            .req{
+                color: #854a1a;
+            }
+    
+
+            @media (max-width:600px) {
+                .custom-width {
+                    width: auto;
+                    display: none;
+                }
+
+                
+                .blush>div{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .big-img{
+                    width: 100%;
+                    text-align: center;
+                /* border: 1.5px solid black; */
+                }
+            
+                .big-img img{
+                    width: 100%;
+                    
+                }
+            
+                .images{
+                    width: 100%;
+                    margin-left: 0;
+                }
+            
+              
+                .product{
+                    padding: 12px !important;
+                    margin-top: 0px !important;
+                 
+                }
+
+                .explore {
+                    padding: 12px !important;
+                }
+
+
+                .modal-content {
+                    position: relative !important;
+                }
+
+                .modal-content>button:nth-child(1) {
+                    position: absolute !important;
+                    right: -8px !important;
+                    z-index: 99 !important;
+                }
+
+                .modal-content>button:nth-child(1) svg {
+                    fill: #000 !important;
+                }
+
+                .footer h3{
+                    font-size: 20px;
+                }
+
+                .footer ul li a{
+                    font-size: 16px !important;
+                }
+
+                .footer p {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    align-items: center;
+                }
+
+                .footer>div>div>div:nth-child(2) h3 {
+                    margin-top: 10px;
+                }
+            
+            }
+
+            @media (min-width:720px) and (max-width:960px) {
+                .explore p{
+                    font-size: 18px;
+                }
+
+                .explore h3{
+                    font-size: 30px;
+                }
+
+                .explore h5{
+                    font-size: 25px;
+                }
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <header class="head">
+            <!-- place navbar here -->
+            <nav
+                class="navbar navbar-expand-sm p-0 fixed-top shadow-sm" style="background-color: #F8F9FA ;"
+            >
+                <div class="container header my-2">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo1.png" alt="" width="150px" height="auto">
+                    </a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    > 
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <div class="d-flex custom-width justify-content-center ms-3 ">
+                            <div class="d-none d-lg-block w-100">
+                                <form class="input-group border-0 py-1 rounded-pill" style="border: 1px solid #333 !important;" >
+                                    <button class="btn border-0 my-2 my-sm-0" type="submit">
+                                        <i class="fa fa-search text-dark" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" class="form-control border-0 me-sm-2 bg-transparent"  placeholder="Search" />
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav m-auto  mt-lg-0 ">
+                            <li class="nav-item ">
+                                <!-- <a class="nav-link active" href="#" aria-current="page"
+                                    >HOME
+                                    <span class="visually-hidden">(current)</span></a
+                                > -->
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="shop.html">MAKEUP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product-index.html">SKINCARE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact us.html">CONTACT</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li> -->
+                    
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <div class="nav-btns width-100% height-auto mx-3">
+                            <!--cart-->
+                            <a href="#" class="btn btn-outline-dark">
+                                <i class="bi bi-cart"></i>
+                            </a>
+                        </div>
+                        <div class="dropdown ">
+                            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="bi bi-person-circle"></i></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-black text-center bg-transparent" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container blush my-5">
+                <div class="row">
+                    <div class="col col-lg-4">
+                        <div class="right pt-5 ms-5 ">
+                            <ol class="breadcrumb mt-2 ">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                <li class="breadcrumb-item"><a href="shop.html">Skin care</a>
+                                <li class="breadcrumb-item"><a href="shop.html">Makeup</a>
+                            </ol>
+                        </div>
+                        <div class="cart">
+                            <div class="buy w-100">
+                                <div class="big-img">
+                                    <img src="images/1nv-Qt9vjW-000000000494284944_1.avif" class="img-fluid" alt="">
+                                </div>
+                                <div class="images ">
+                                    <div class="small-img">
+                                        <img src="images/1nv-Qt9vjW-000000000494284944_1.avif" onclick="showImg(this.src)" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="small-img">
+                                        <img src="images/srDXRf0XLD-000000000494284944_2.avif" onclick="showImg(this.src)" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="small-img">
+                                        <img src="images/jPFrK6PLo-000000000494284944_3.avif" onclick="showImg(this.src)" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="small-img">
+                                        <img src="images/erk0lByjr2-000000000494284944_7 (1).avif" onclick="showImg(this.src)" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-8 mt-5 p-5 justify-content-center product">
+                        <div class="beauty ">
+                                <h5 class="pt-5">RARE BEAUTY</h5>
+                                <h4>Soft Pinch Liquid Blush</h4>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star text-dark"></span><span>  4.5/5</span>
+                                <h6>MRP &#8377;500</h6>
+                                <h5 >Shade:Happy Radient Finish</h5>
+                                <div class="shade">
+                                    <div class="shade-img ">
+                                        <img src="images/color-1.avif" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="shade-img">
+                                        <img src="images/color-2.avif" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="shade-img">
+                                        <img src="images/color-3.avif" class="img-fluid " alt="">
+                                    </div>
+                                    <div class="shade-img">
+                                        <img src="images/color-4.avif" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="quantity mt-2">
+                                    <p>Qunatity :</p>
+                                    <input type="number" min="1" max="5" value="1">
+                                </div>
+                                <div class="btn-box mt-2">
+                                    <a href="cart-2.html"> <button class="cart-btn">ADD TO CART</button></a>
+                                    <a href="BUY.HTML"> <button class="buy-btn">BUY NOW</button></a>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                         DESCRIPTION
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <h5>What It is:</h5>
+                                            <p>A weightless, long-lasting liquid blush that blends and builds beautifully for a soft, healthy flush, available in matte and dewy finishes</p>
+                                            <h5>What It does:</h5>
+                                            <p>Create a pinch-perfect flush using this featherweight formula infused with long-lasting pigments that last all day. Available in matte or dewy finishes, this liquid blush blends beautifully to create soft, buildable colour with a natural, second-skin finish</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            What else you need to know:
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Available in both matte or dewy finishes</li>
+                                                <li>Available in 11 shades</li>
+                                                <li>Bliss</li>
+                                                <li>nude pink (matte)</li>
+                                                <li>Love – terracotta (matte)</li>
+                                                <li>Grace</li>
+                                                <li>bright rose mauve (matte)</li>
+                                                <li>Faith</li>
+                                                <li>deep berry (matte)</li>
+                                                <li>Joy</li>
+                                                <li>muted peach (dewy)</li>
+                                                <li>Happy</li>
+                                                <li>Believe – true mauve (dewy)</li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                            
+                                </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid explore py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Explore Body Care Products and Face Care Products Online</h3>
+                            <p >No one likes to have dry and chapped skin. But, the changing weather, the moisture content in the air, and other environmental factors result in your skin becoming dry. The best way to maintain soft and supple skin is by incorporating body care products and face care products in your daily skincare routine. Even the soaps and body wash products that you use may contain harsh chemicals, which will cause your skin to dry out. If left untreated, you will experience scaling, itching, and cracking of the skin. The skin is the largest organ of our body and it is exposed to various chemicals, UV rays, weather changes, and more. Hence, it becomes important that we take care of it in the best possible way. Let us now take a look at some of the ways in which we can take care of our skin</p>
+                            <h5>Easy and Effective Ways to Combat Dry Skin</h5>
+                            <p>The first and the most important step to achieve healthy and smooth skin is by hydrating it. You need to drink about 1 - 2 liters of water every day and also consume lots of fruits and vegetable.exfoliators, and face washes to keep your facial skin dirt- and pollution-free. Check out products that are offered by popular brands, Fair & Lovely, Beardo, and more. Exfoliators help get rid of dead cells, resulting in smoother, brighter, and more refined skin. Use toners to remove any dirt or oil residues that might have been left behind after washing your face. These skin creams are formulated using various ingredients that help deeply nourish and revitalize your skin. Check out products that are offered by reputed brands, such as Vaseline, Garnier, Nivea, Biotique, Ponds, Lakme, Olay, and more. Also, Check out some of the gentle and skin-friendly soap brands, like Pears, Nature's Essence, Dettol, Speaking Tree, Sebamed, Herbal Trends, and more. </p>
+                            <h5>Buy Face Care and Body Care Products Online</h5>
+                            <p>You can purchase the best face care products and body care products from your favorite online shopping site. Furthermore, if you are stepping out of your home during the day, you need to apply a sunscreen lotion or cream that comes with a high SPF level. These creams and lotions help protect your delicate skin from the harsh UVA and UVB rays of the sun. , like Neutrogena, Lakme, Lotus Herbals, Biotique, WOW Skin Science, Mamaearth, and more. To reduce the effect of suntan and improve the complexion of your skin, you can try using fairness creams that are offered by brands such as Ponds, Lakme, Fair & Handsome, Faiza, Vicco, and many more. Moreover, following a proper skincare regimen goes a long way in ensuring that your skin is soft, moisturized, and healthy, despite it being exposed to various harmful factors throughout the day</p>
+                            <p>under 40 products: <a href="#"> Moisturizer below 500 | Face pack below 500</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+            <div class="container-fluid footer bg-dark text-light">
+                <div class="container">
+                    <div class="row py-5">
+                      <div class="col-6 col-md-3 mb-3 pt-4">
+                        <img src="images/footer-logo.png" alt="" width="150px" height="auto">
+                          <p>Fashion Demo Store, Demo Store India 345-659</p>
+                          <p>Call Us: 123-456-7898</p>
+                          <p>Email Us: Support@fashion.com</p>
+                      </div>
+                
+                      <div class="col mb-3">
+                        <h3 class="pt-4">About</h3>
+                        <ul class="nav flex-column ">
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Term & Policy</a></li>
+                          <li><a href="#">Careers</a></li>
+                          <li><a href="#">News & Blog</a></li>
+                          <li><a href="#">Careers</a></li>
+                        </ul>
+                      </div>
+                
+                      <div class="col mb-3">
+                        <h3 class="pt-4"> Catigories</h3>
+                        <ul class="nav flex-column  ">
+                          <li><a href="#">Acne Marks</a></li>
+                          <li><a href="#">Pigmentations/ Dark Spots</a></li>
+                          <li><a href="#">Acne/Pimple</a></li>
+                          <li><a href="#">Acne Scars</a></li>
+                          <li><a href="#">Open Pores</a></li>
+                        </ul>
+                      </div>
+                
+                      <div class="col-md-4 mb-3">
+                        <form>
+                          <h3 class="pt-4">Help</h3>
+                          <p>Monthly digest of what's new and exciting from us.</p>
+                          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="letter " type="button">Sumbit</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+                      <p>© 2024 Company, Inc. All rights reserved.</p>
+                      <ul class="list-unstyled d-flex">
+                          <img src="images/payment-method_69e7ec.svg" alt="" class="d-block w-100 img-fluid me-5">
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- login Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content" style="position: relative;">
+                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+                    style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                    fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+                </button>
+                <div class="modal-body p-0">
+                    <div class="container-fluid g-0">
+                    <div class="row">
+                        <div class="col d-flex flex-column p-5">
+                        <div class="row mb-5 pb-5">
+                            <div class="col">
+                            <form class="row g-3">
+                                <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Enter Email/Mobile Number</label>
+                                <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                                </div>
+                                <div class="d-grid">
+                                <button class="btn1" type="button">Request OTP</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        <div class="row align-items-end mt-5 pt-5">
+                            <div class="col text-center ">
+                            <a href="#exampleModal2" class="req" data-bs-toggle="modal">New to EVITA? Create an
+                                account</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+                </div>
+            </div>
+            </div>
+        <!-- Modal2 -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content" style="position: relative;">
+                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+                    style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                    fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+                </button>
+                <div class="modal-body p-0">
+                    <div class="container-fluid g-0">
+                    <div class="row">
+                        <div class="col d-flex flex-column p-5">
+                        <div class="row mb-5 pb-5">
+                            <div class="col">
+                            <form class="row g-3">
+                                <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Enter Mobile Number</label>
+                                <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                                </div>
+                                <div class="d-grid">
+                                <button class="btn2" type="button">Continue</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        <div class="row align-items-end mt-5 pt-5">
+                            <div class="col text-center ">
+                            <a href="exampleModal1" class="req" data-bs-toggle="modal">Existing User? Log in</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let bigImg = document.querySelector('.big-img img');
+            function showImg(pic){
+                bigImg.src = pic;
+            }
+        </script>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

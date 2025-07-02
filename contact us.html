@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>contact</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+            <!-- font-awesome 4.7.0 CSS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"crossorigin="anonymous"/>
+         <!-- Bootstrap Icons -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cookie&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lato&family=Montserrat:ital,wght@0,200..900;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital@0;1&family=Roboto:wght@400;700&family=Varela+Round&display=swap');:root{
+                --font-family-Montserrat: "Montserrat", serif;
+                --font-family-cookie: "Cookie", serif;
+                --font-family-Poppins: "Poppins", serif;
+                --text-color-black:#333333;
+                --btn-bg-color: #854a1a;
+                --bg-color-white: #f8e6c2;
+                --btn-color-white: #fff;
+                --footer-bg-color: #212529;
+    
+            }
+
+            .container{
+                max-width: 1600px !important;
+            }
+
+            .navbar{
+                background-color:#F8F9FA ;
+            } 
+            
+            .header{
+                max-width: 1600px !important;
+                color: #fff;
+            }
+
+            .header ul li{
+                color:  #333333;
+                font-size: 20px;
+                font-family: var(--font-family-Poppins);
+                font-weight: 500;
+                margin-right: 15px;
+            }
+            .header ul li:last-child{
+                margin-right: 0;
+            }
+            .header ul li a{
+                padding: 5px 10px !important;
+                font-weight: 500;
+            }
+            .header ul li a:hover{
+                /* background-color: #FCACB4; */
+                color: #854a1a;
+                transition: 0.5sec !important;
+            }
+
+            
+            .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+                color: #854a1a;
+            }
+
+            #searchBar {
+                display: none;
+            }
+            
+            .custom-width {
+                width: 100%;
+            }
+
+            
+            .form-control:focus{
+                box-shadow: none !important;
+            }
+
+            .form {
+                color:#FFDEDE;
+            }
+
+            .form-left-side {
+                background-color: #f8e6c2;
+            }
+            .contact-us>div>div:nth-child(1)>div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px !important;
+                height: 50px !important;
+                border: 2px solid #fff;
+                border-radius: 50%;
+            }
+            .contact-us p{
+                    margin-bottom: 0 !important;
+                }
+            .icon{
+                font-size: 24px;
+            }
+
+            .form-right-side{
+                background-color: #fff;
+            }
+
+            .Submit-btn{
+                background-color: #854a1a;
+                color:#fff;
+                border: none;
+                border-radius: 0.3rem;
+                padding: 10px 20px;
+                margin-top: 10px;
+            }
+
+            .Submit-btn:hover{
+                background-color:#333333;
+            }
+
+            .form-control:focus{
+                box-shadow: none !important;
+            }
+
+            .footer{
+                background:#212529 !important;
+                color: #fff;
+            }
+            .footer address,p{
+                margin-bottom: px;
+                text-transform: capitalize;
+                text-align: left;
+                font-size: 20px;
+            }
+
+            .footer button{
+                padding: 10px 20px;
+            }
+            .footer li {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+            }
+            .footer a{
+                text-decoration: none;
+                font-family: var(--font-family-Poppins);
+                font-size: 20px;
+                color: #fff;
+            }
+            .footer a:hover{
+                color: #854a1a;
+                text-decoration: none;
+            }
+
+            .letter{
+                background-color: #854a1a !important;
+                border-radius: 0.2rem;
+                border: none;
+                color: #fff;
+            }
+
+            .letter:hover {
+                background-color: #f1f1f1 !important;
+                color: #854a1a;
+            }
+
+            .modal .btn {
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+            .btn1,
+            .btn2 {
+                background: #854a1a;
+                color: #fff;
+                outline: none;
+                border: none;
+                padding: 10px 16px;
+                border-radius: 0.3rem;
+                font-size: 16px;
+            }
+            .btn1:hover,
+            .btn2:hover{
+                background: #333333;
+            }
+            .req{
+                color: #854a1a;
+            }
+
+            @media (max-width:600px) {
+                .header {
+                    display: grid !important;
+                }
+                .header .input-group{
+                    display: none;
+                }
+                .header>a {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                }
+                .header>div:nth-child(4) {
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                }
+                .header>div:nth-child(3) {
+                    grid-column: 1/5;
+                    grid-row: 2/3;
+                }
+                .header>button:nth-child(2) {
+                    grid-column: 4/5;
+                    grid-row: 1/2;
+                }
+                .form-left-side{
+                    padding: 20px !important;
+                }
+                .contact-us p{
+                    font-size: 16px;
+                    margin-bottom: 0 !important;
+                }
+
+                .modal-content {
+                    position: relative !important;
+                }
+
+                .modal-content>button:nth-child(1) {
+                    position: absolute !important;
+                    right: -8px !important;
+                    z-index: 99 !important;
+                }
+
+                .modal-content>button:nth-child(1) svg {
+                    fill: #000 !important;
+                }
+
+                .footer h3{
+                    font-size: 20px;
+                }
+
+                .footer ul li a{
+                    font-size: 16px !important;
+                }
+
+                .footer p {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    align-items: center;
+                }
+
+                .footer>div>div>div:nth-child(2) h3 {
+                margin-top: 10px;
+                }
+
+            }
+
+            @media (min-width:720px) and (max-width:960px) {
+                .form-left-side{
+                    padding: 28px !important;
+                }
+                .contact-us p{
+                    font-size: 16px;
+                    margin-bottom: 0 !important;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+            <nav
+                class="navbar navbar-expand-sm p-0 fixed-top shadow-sm" style="background-color: #F8F9FA ;"
+            >
+                <div class="container header my-2">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo1.png" alt="" width="150px" height="auto">
+                    </a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    > 
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <div class="d-flex custom-width justify-content-center ms-3 ">
+                            <div class="d-none d-lg-block w-100">
+                                <form class="input-group border-0 py-1 rounded-pill" style="border: 1px solid #333 !important;" >
+                                    <button class="btn border-0 my-2 my-sm-0" type="submit">
+                                        <i class="fa fa-search text-dark" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" class="form-control border-0 me-sm-2 bg-transparent"  placeholder="Search" />
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <!-- <a class="nav-link active" href="#" aria-current="page"
+                                    >HOME
+                                    <span class="visually-hidden">(current)</span></a
+                                > -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="shop.html">MAKEUP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product-index.html">SKINCARE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact us.html">CONTACT</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li> -->
+                    
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <div class="nav-btns width-100% height-auto mx-3">
+                            <!--cart-->
+                            <a href="cart.html" class="btn btn-outline-dark">
+                                <i class="bi bi-cart"></i>
+                            </a>
+                        </div>
+                        <div class="dropdown ">
+                            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="bi bi-person-circle"></i></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-black text-center bg-transparent" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main >
+            <div class="container contact  py-5 ">
+                <div class="contact-form shadow rounded mt-5">
+                    <div class="row ">
+                        <div class="col col-md-6 col-lg-4 form-left-side p-5  text-black ">
+                            <h2 class="mb-4">Let,s get in touch</h2>
+                            <p class="mb-5">we'are always available for you just contact us.</p>
+                            <div class="contact-us">
+                                <div class="address row justify-content-between align-items-center mb-5">
+                                    <div class="col-2"><div><i class="bi bi-geo-alt-fill icon "></i></div></div>
+                                    <div class="col"><p><b>Address:</b> Fashion Store, Demo Store India </p></div>
+                                </div>
+                                <div class="phone mb-5 row justify-content-between align-items-center">
+                                    <div class="col-2"><div><i class="bi bi-telephone-fill icon"></i></div></div>
+                                    <div class="col"><p><b>Phone:</b> 123-456-7898</p></div>
+                                </div>
+                                <div class="Email mb-5 row  justify-content-between align-items-center">
+                                    <div class="col-2"><div><i class="bi bi-envelope icon"></i></div></div>
+                                    <div class="col-10"><p><b>Email:</b>Support@fashion.com</p></div>
+                                </div>
+                                <div class="website mb-5 row justify-content-between align-items-center">
+                                    <div class="col-2"><div><i class="bi bi-globe-central-south-asia icon"></i></div></div>
+                                    <div class="col-10"><p><b>Website:</b>EVITA.BEAUTY@gmail.com</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-6 col-lg-8 form-right-side p-5 ">
+                            <h2 class="mb-4">Get in touch</h2>
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="Full Name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="Email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputsubject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputmessage" class="form-label">Message</label> 
+                                    <textarea class="form-control" rows="6" placeholder="Message" id=""></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <a href="order.html"> <button class="Submit-btn">Sumbit Now</button></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+            <div class="container-fluid footer bg-dark text-light">
+                <div class="container">
+                    <div class="row py-5">
+                      <div class="col-6 col-md-3 mb-3 pt-4">
+                        <img src="images/footer-logo.png" alt="" width="150px" height="auto">
+                          <p >Fashion Demo Store, Demo Store India 345-659</p>
+                          <p>Call Us: 123-456-7898</p>
+                          <p>Email Us: Support@fashion.com</p>
+                      </div>
+                
+                      <div class="col mb-3">
+                        <h3 class="pt-4">About</h3>
+                        <ul class="nav flex-column ">
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Term & Policy</a></li>
+                          <li><a href="#">Careers</a></li>
+                          <li><a href="#">News & Blog</a></li>
+                          <li><a href="#">Careers</a></li>
+                        </ul>
+                      </div>
+                
+                      <div class="col mb-3">
+                        <h3 class="pt-4">Catigories</h3>
+                        <ul class="nav flex-column  ">
+                          <li><a href="#">Acne Marks</a></li>
+                          <li><a href="#">Pigmentations/ Dark Spots</a></li>
+                          <li><a href="#">Acne/Pimple</a></li>
+                          <li><a href="#">Acne Scars</a></li>
+                          <li><a href="#">Open Pores</a></li>
+                        </ul>
+                      </div>
+                
+                      <div class="col-md-4 mb-3">
+                        <form>
+                          <h3 class="pt-4">Help</h3>
+                          <p>Monthly digest of what's new and exciting from us.</p>
+                          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="letter " type="button">Sumbit</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+                      <p>© 2024 Company, Inc. All rights reserved.</p>
+                      <ul class="list-unstyled d-flex">
+                          <img src="images/payment-method_69e7ec.svg" alt="" class="d-block w-100 img-fluid me-5">
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            <!-- login Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                  <div class="modal-content" style="position: relative;">
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+                      style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                        fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+                        <path
+                          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                      </svg>
+                    </button>
+                    <div class="modal-body p-0">
+                      <div class="container-fluid g-0">
+                        <div class="row">
+                          <div class="col d-flex flex-column p-5">
+                            <div class="row mb-5 pb-5">
+                              <div class="col">
+                                <form class="row g-3">
+                                  <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Enter Email/Mobile Number</label>
+                                    <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                                  </div>
+                                  <div class="d-grid">
+                                    <button class="btn1" type="button">Request OTP</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="row align-items-end mt-5 pt-5">
+                              <div class="col text-center ">
+                                <a href="#exampleModal2" class="req" data-bs-toggle="modal">New to EVITA? Create an
+                                  account</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+            <!-- Modal2 -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                  <div class="modal-content" style="position: relative;">
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+                      style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                        fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+                        <path
+                          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                      </svg>
+                    </button>
+                    <div class="modal-body p-0">
+                      <div class="container-fluid g-0">
+                        <div class="row">
+                          <div class="col d-flex flex-column p-5">
+                            <div class="row mb-5 pb-5">
+                              <div class="col">
+                                <form class="row g-3">
+                                  <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Enter Mobile Number</label>
+                                    <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                                  </div>
+                                  <div class="d-grid">
+                                    <button class="btn2" type="button">Continue</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="row align-items-end mt-5 pt-5">
+                              <div class="col text-center ">
+                                <a href="exampleModal1" class="req" data-bs-toggle="modal">Existing User? Log in</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+            </div>
+        
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
